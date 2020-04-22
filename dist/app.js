@@ -1,10 +1,8 @@
+"use strict";
 class Department {
-    name :string;
-    constructor(n: string) {
+    constructor(n) {
         this.name = n;
     }
 }
-
 const Coding = new Department("Mehul");
-
-console.log(Coding)
+console.log(Coding);
