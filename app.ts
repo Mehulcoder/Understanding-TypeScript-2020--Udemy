@@ -1,10 +1,17 @@
-class Department {
-    name :string;
-    constructor(n: string) {
-        this.name = n;
+function Logger(hello: Function) {
+    console.log("Logging.....")
+    console.log(hello)
+}
+
+@Logger
+class Person {
+    name = "Mehul"
+
+    constructor() {
+        console.log("Creating the person object")
     }
 }
 
-const Coding = new Department("Mehul");
+const person = new Person();
 
-console.log(Coding)
+console.log(person)
